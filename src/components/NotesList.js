@@ -1,16 +1,16 @@
 
 import Note from './Note';
+import AddNote from './AddNode'
+const NotesList = ({ notes }) => {
 
-const NotesList = () => {
-
-        return(
-            <div className="notes-list">
-                <Note/>
-                <Note/>
-                <Note/>
-                <Note/>
-            </div>
-        )
+    return (
+        <div className="notes-list">
+            {notes.map((note) =>
+                <Note id={note.id} text={note.text} date={note.date}/>
+            )}
+            <AddNote/>
+        </div>
+    )
 }
 
 export default NotesList;
