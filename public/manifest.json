@@ -1,6 +1,6 @@
 {
-  "name": "MediumTab",
-  "description": "Medium articles, the good way!",
+  "name": "Note App",
+  "description": "Save your time and take notes",
   "version": "1.0",
   "manifest_version": 2,
   "permissions" : ["management", "history", "storage"],
